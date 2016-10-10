@@ -1,0 +1,12 @@
+<ul>
+  <li *ngFor="let comment of commentList">
+    <span>
+      <strong>{{comment.name}}</strong>
+      &nbsp;&nbsp;&nbsp;Email: &lt;{{comment.email}}&gt;
+    </span> <span>Date: {{comment.date | date }}</span>
+    <p>{{comment.detail}}</p>
+    
+  </li>
+</ul>
+
+

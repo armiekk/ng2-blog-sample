@@ -1,0 +1,7 @@
+.content-title {
+    cursor: pointer;
+}
+
+.content-title:hover {
+    color: cornflowerblue;
+} 

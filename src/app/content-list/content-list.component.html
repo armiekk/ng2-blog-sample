@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let content of contentList">
+   <span>
+     <strong class="content-title" (click)="contentDetail(content.id)">{{content.title}} &nbsp;</strong>
+     <i> Written By: {{content.author}}</i>
+     <i>{{content.date}}</i>
+   </span>
+  </li>
+</ul>

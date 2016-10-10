@@ -1,0 +1,17 @@
+<h2>{{content.title}}</h2>
+<span>Written By: &nbsp;<strong>{{content.author}}</strong>&nbsp;&nbsp;&nbsp;<i>{{content.date}}</i></span>
+<p>{{content.detail}}</p>
+<h3>Comments</h3>
+<app-comment-list [commentList]="commentList"></app-comment-list>
+<h3>Comment Me!</h3>
+<form>
+    <label for="name">Name: </label>
+    <input type="text" name="name" [(ngModel)]="commentForm.name"><br><br>
+    <label for="email">Email: </label>
+    <input type="email" name="email" [(ngModel)]="commentForm.email"><br><br>
+    <label for="detail">detail: </label>
+    <textarea rows="5" cols="50" name="detail" [(ngModel)]="commentForm.detail" ></textarea><br><br>
+    <button type="submit" (click)="submitComment()">Submit</button>
+</form>
+
+
